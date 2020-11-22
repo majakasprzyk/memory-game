@@ -1,0 +1,9 @@
+.box{
+    background-color: rgba(219, 189, 153, 0.16); 
+    padding: 15px;
+    margin: 15px 100px;
+}
+
+p{
+    cursor: pointer;
+}
