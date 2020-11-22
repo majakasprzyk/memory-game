@@ -4,7 +4,7 @@
     margin: 15px 100px;
 }
 
-p{
+p:first{
     cursor: pointer;
 }
 
