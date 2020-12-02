@@ -9,3 +9,8 @@ const cardTypes = Array.from({length: 8})
     .map((element) => {
         return `./img/${element}.jpg`;  // można to zapisać jeszecze tak: return "type-" + element;
     });
+
+const cards = cardTypes.flatMap((type) => [type, type]);
+
+console.log(cardTypes);
+console.log(cards);
