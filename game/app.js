@@ -1,4 +1,4 @@
-const container = document.getElementById("game");
+const container = document.getElementByClass("memory-card");
 
 // 8 different types of card
 
