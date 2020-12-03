@@ -1,4 +1,4 @@
-const container = document.getElementByClass("memory-card");
+const container = document.querySelector(".memory-game");
 
 // 8 different types of card
 
@@ -26,3 +26,20 @@ console.log(cardTypes);
 console.log(cards);
 console.log(cardsToPick);
 console.log(cardsInRandomOrder);
+
+////
+
+const memoryCards = document.querySelector('.memory-card')
+
+memoryCards.forEach(memoryCard =>{
+    memoryCard.addEventListener('click',(event) =>{
+        console.log(event.currentTarget.children);
+
+    const children = event.currentTarget.children;
+
+    const backFace = children [1];
+
+    backFace.classList.toggle('backface');
+    })
+})
+
