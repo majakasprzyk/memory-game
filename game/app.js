@@ -45,14 +45,3 @@ console.log(cardsInRandomOrder);
 
 // kikniecie na karte sprawia że pojawia się klasa
 
-const memoryCard = document.querySelector('.memory-card')
-
-memoryCard.addEventListener('click', (event) => {
-
-const card = event.currentTarget.children[0]
-
-
-if (card.classList.contains('card-hidden')) {
-	card.classList.replace('card-hidden', 'card')
-}
-})
