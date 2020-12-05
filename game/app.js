@@ -27,19 +27,32 @@ console.log(cards);
 console.log(cardsToPick);
 console.log(cardsInRandomOrder);
 
-////
+//// to nie działa 
 
-const memoryCards = document.querySelector('.memory-card')
+// const memoryCards = document.querySelector('.memory-card')
 
-memoryCards.forEach(memoryCard =>{
-    memoryCard.addEventListener('click',(event) =>{
-        console.log(event.currentTarget.children);
+// memoryCards.forEach(memoryCard =>{
+//     memoryCard.addEventListener('click',(event) =>{
+//         console.log(event.currentTarget.children);
 
-    const children = event.currentTarget.children;
+//     const children = event.currentTarget.children;
 
-    const backFace = children [1];
+//     const backFace = children [1];
 
-    backFace.classList.toggle('backface');
-    })
+//     backFace.classList.toggle('backface');
+//     })
+// })
+
+// kikniecie na karte sprawia że pojawia się klasa
+
+const memoryCard = document.querySelector('.memory-card')
+
+memoryCard.addEventListener('click', (event) => {
+
+const card = event.currentTarget.children[0]
+
+
+if (card.classList.contains('card-hidden')) {
+	card.classList.replace('card-hidden', 'card')
+}
 })
-
