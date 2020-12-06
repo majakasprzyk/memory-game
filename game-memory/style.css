@@ -1,6 +1,7 @@
 .memory-game{
     display: flex;
     flex-wrap: wrap;
+    margin: 15px 500px;
 }
 
 .memory-card{
