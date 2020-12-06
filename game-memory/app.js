@@ -18,4 +18,6 @@ memoryCards.forEach(memoryCard =>{
 });
 
 
-memoryCards
+const divCard = document.querySelectorAll("div");
+
+// teraz chciałam złapać wszystkie divy z id i żeby robiło tak, że jak naleźy do tego samego diva o tym samym id to będzie odkryte
