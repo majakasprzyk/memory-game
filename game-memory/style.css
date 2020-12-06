@@ -1,5 +1,6 @@
 .memory-game{
     display: flex;
+    flex-wrap: wrap;
 }
 
 .memory-card{
@@ -37,6 +38,36 @@
 
 .heart{
     background-image: url(./img/3.png);
+    background-position: center;
+    background-size: contain;
+}
+
+.home{
+    background-image: url(./img/4.png);
+    background-position: center;
+    background-size: contain;
+}
+
+.leaf{
+    background-image: url(./img/5.png);
+    background-position: center;
+    background-size: contain;
+}
+
+.music{
+    background-image: url(./img/6.png);
+    background-position: center;
+    background-size: contain;
+}
+
+.figure{
+    background-image: url(./img/7.png);
+    background-position: center;
+    background-size: contain;
+}
+
+.sun{
+    background-image: url(./img/8.png);
     background-position: center;
     background-size: contain;
 }
