@@ -16,3 +16,6 @@ memoryCards.forEach(memoryCard =>{
         }
     });
 });
+
+
+memoryCards
