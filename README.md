@@ -1,5 +1,7 @@
 [link do gry memory](https://majakasprzyk.github.io/jfdzr2-project-2/game-memory/index.html)
 
+[link do feature 1 - akordeon](https://majakasprzyk.github.io/jfdzr2-project-2/feature/offer.html)
+
 # jfdzr2-project-2
 
 ## Repozytorium dla Projektu nr 2.
