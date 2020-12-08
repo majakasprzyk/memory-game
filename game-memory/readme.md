@@ -1,0 +1,1 @@
+url(https://majakasprzyk.github.io/jfdzr2-project-2/.)
