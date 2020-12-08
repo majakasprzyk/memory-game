@@ -50,8 +50,7 @@ memoryCards.forEach(memoryCard =>{
 
 const divCard = document.querySelectorAll("div");
 
-// teraz chciałam złapać wszystkie divy z id i żeby robiło tak, że jak naleźy do tego samego diva o tym samym id to będzie odkryte
-
-
-// const pairCards = document.getElementsById("");
+// done trzeba sprawdzić typy kard jesli są takie same to zostają odkryte
+// jeśli karty są inne to po sekundzie np. wraca do poprzedniego stanu, czyli na back-card
+// done nie wolno mieć odkrytych więcej niż 2 card - w senie innych niż do pary 
 
