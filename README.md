@@ -1,3 +1,5 @@
+[link do gry memory](https://majakasprzyk.github.io/jfdzr2-project-2/)
+
 # jfdzr2-project-2
 
 ## Repozytorium dla Projektu nr 2.
