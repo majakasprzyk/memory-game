@@ -16,7 +16,7 @@ function toggleCard(cardNode) {
 memoryCards.forEach(memoryCard =>{
     memoryCard.addEventListener('click', (event) => {
         const currentCardType = event.currentTarget.dataset.cardType;
-        console.log(event.currentTarget.dataset.cardType)//
+        console.log(event.currentTarget.dataset.cardType) // ta linijka to to samo co ta poniżej
         console.log(event.currentTarget.getAttribute("data-card-type"))
         if (card1 === null) {
             card1 = currentCardType;
@@ -30,7 +30,14 @@ memoryCards.forEach(memoryCard =>{
         
         if (card1 === card2){
             card1 = null;
-            card2 =null;
+            card2 = null;
+        }
+        // chciałabym napisać warunek, że jeśli karty nie są takie same to klasa z front-card zmienia się znowu na back-card ale nie działa i nie mam już pomysłu jakby to zrobić
+        if (card1 != card2){
+            card1.classList.replace('front-card', 'back-card');
+            card2.classList.replace('front-card', 'back-card');
+
+
         }
         const card = event.currentTarget.children[0];
     console.log(event.currentTarget.children);
