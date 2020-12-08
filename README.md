@@ -1,4 +1,4 @@
-[link do gry memory](https://majakasprzyk.github.io/jfdzr2-project-2/)
+[link do gry memory](https://majakasprzyk.github.io/jfdzr2-project-2/game-memory/index.html)
 
 # jfdzr2-project-2
 
