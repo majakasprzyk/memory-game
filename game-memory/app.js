@@ -6,6 +6,7 @@ let card2Element = null;
 let card1 = null;
 let card2 = null;
 
+// to jest wyciągnięta funkcja zmiany klas, którą używam na dole
 
 function toggleCard(cardNode) {
     const card = cardNode;
@@ -17,15 +18,8 @@ function toggleCard(cardNode) {
     }
 }
 
-//chcę tu ustawić time out że jeśli karty sa inne to się zakrywa
 
-// setTimeout(function() {
-//     if (card1 !== card2){
-//     memoryCards.classList.replace('front-card', 'back-card');
-    
-// }}, 3000);
-
-/////
+// cała główna funkcja sprawiająca, że karty działają
 
 memoryCards.forEach(memoryCard =>{
     memoryCard.addEventListener('click', (event) => {
@@ -35,7 +29,6 @@ memoryCards.forEach(memoryCard =>{
         console.log(event.currentTarget.getAttribute("data-card-type"))
      
         if (card1 === null) {
-           
             card1 = currentCardType;
             card1Element = card;
             console.log({card1, card2})
@@ -48,20 +41,22 @@ memoryCards.forEach(memoryCard =>{
             card2 = currentCardType;
             toggleCard(event.currentTarget);
         }
-        console.log({card1, card2})
+            console.log({card1, card2})
+
         if (card1 === card2){
             card1 = null;
             card2 = null;
             card1Element = null;
             card2Element = null;
         }
-        // chciałabym napisać warunek, że jeśli karty nie są takie same to klasa z front-card zmienia się znowu na back-card ale nie działa i nie mam już pomysłu jakby to zrobić
+        // warunek, że jeśli karty nie są takie same to zmienia się klasa i się odwracają tak jak były
         if (card1 !== card2){
             setTimeout(() =>{
                 card1Element.classList.replace('front-card', 'back-card');
                 card2Element.classList.replace('front-card', 'back-card');
-    
-            }, 3000) 
+            }, 700); 
+            card1 = null;
+            card2 = null;
             
         }
 
