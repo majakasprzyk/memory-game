@@ -1,10 +1,14 @@
 const memoryCards = document.querySelectorAll(".memory-card");
 const backCard = document.querySelector(".back-card");
+const divCard = document.querySelectorAll("div");
+let card1Element = null;
+let card2Element = null;
 let card1 = null;
 let card2 = null;
 
+
 function toggleCard(cardNode) {
-    const card = cardNode.children[0];
+    const card = cardNode;
     if (card.classList.contains('back-card')){
         card.classList.replace('back-card', 'front-card');
     }
@@ -15,40 +19,52 @@ function toggleCard(cardNode) {
 
 //chcę tu ustawić time out że jeśli karty sa inne to się zakrywa
 
-setTimeout(function() {
-    if (card1 !== card2){
-    memoryCards.classList.replace('front-card', 'back-card');
+// setTimeout(function() {
+//     if (card1 !== card2){
+//     memoryCards.classList.replace('front-card', 'back-card');
     
-}}, 3000);
+// }}, 3000);
 
 /////
 
 memoryCards.forEach(memoryCard =>{
     memoryCard.addEventListener('click', (event) => {
         const currentCardType = event.currentTarget.dataset.cardType;
+        const card = event.currentTarget;
         console.log(event.currentTarget.dataset.cardType) // ta linijka to to samo co ta poniżej
         console.log(event.currentTarget.getAttribute("data-card-type"))
+     
         if (card1 === null) {
+           
             card1 = currentCardType;
+            card1Element = card;
+            console.log({card1, card2})
+
             toggleCard(event.currentTarget);
             return;
         }
         if (card2 === null){
+            card2Element = card;
             card2 = currentCardType;
             toggleCard(event.currentTarget);
         }
-        
+        console.log({card1, card2})
         if (card1 === card2){
             card1 = null;
             card2 = null;
+            card1Element = null;
+            card2Element = null;
         }
         // chciałabym napisać warunek, że jeśli karty nie są takie same to klasa z front-card zmienia się znowu na back-card ale nie działa i nie mam już pomysłu jakby to zrobić
-        // if (card1 !== card2){
-        //     memoryCards.classList.replace('front-card', 'back-card');
+        if (card1 !== card2){
+            setTimeout(() =>{
+                card1Element.classList.replace('front-card', 'back-card');
+                card2Element.classList.replace('front-card', 'back-card');
+    
+            }, 3000) 
+            
+        }
 
-
-        // }
-        const card = event.currentTarget.children[0];
     console.log(event.currentTarget.children);
     console.log(event.target.children);
 
@@ -58,7 +74,6 @@ memoryCards.forEach(memoryCard =>{
 
 
 
-const divCard = document.querySelectorAll("div");
 
 // done trzeba sprawdzić typy kard jesli są takie same to zostają odkryte
 // jeśli karty są inne to po sekundzie np. wraca do poprzedniego stanu, czyli na back-card

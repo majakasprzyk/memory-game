@@ -12,14 +12,8 @@
 }
 
 .front-card{
-    width: 100%;
-    height: 100%;
-}
-
-.back-card{
-    width: 100%;
-    height: 100%;
-    background-color: beige;
+    width: 50px;
+    height: 50px;
 }
 
 .smile{
@@ -69,4 +63,11 @@
     background-image: url(./img/8.png);
     background-position: center;
     background-size: contain;
+}
+
+.back-card{
+    width: 50px;
+    height: 50px;
+    background-color: beige;
+    background-image: none;
 }
