@@ -13,6 +13,16 @@ function toggleCard(cardNode) {
     }
 }
 
+//chcę tu ustawić time out że jeśli karty sa inne to się zakrywa
+
+setTimeout(function() {
+    if (card1 !== card2){
+    memoryCards.classList.replace('front-card', 'back-card');
+    
+}}, 3000);
+
+/////
+
 memoryCards.forEach(memoryCard =>{
     memoryCard.addEventListener('click', (event) => {
         const currentCardType = event.currentTarget.dataset.cardType;
@@ -33,12 +43,11 @@ memoryCards.forEach(memoryCard =>{
             card2 = null;
         }
         // chciałabym napisać warunek, że jeśli karty nie są takie same to klasa z front-card zmienia się znowu na back-card ale nie działa i nie mam już pomysłu jakby to zrobić
-        if (card1 != card2){
-            card1.classList.replace('front-card', 'back-card');
-            card2.classList.replace('front-card', 'back-card');
+        // if (card1 !== card2){
+        //     memoryCards.classList.replace('front-card', 'back-card');
 
 
-        }
+        // }
         const card = event.currentTarget.children[0];
     console.log(event.currentTarget.children);
     console.log(event.target.children);
@@ -46,6 +55,7 @@ memoryCards.forEach(memoryCard =>{
         
     });
 });
+
 
 
 const divCard = document.querySelectorAll("div");
