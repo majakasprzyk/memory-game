@@ -1,11 +1,12 @@
 const memoryCards = document.querySelectorAll(".memory-card");
 const backCard = document.querySelector(".back-card");
 const divCard = document.querySelectorAll("div");
-const score = document.querySelector(".score");
+
 let card1Element = null;
 let card2Element = null;
 let card1 = null;
 let card2 = null;
+
 
 // to jest wyciągnięta funkcja zmiany klas, którą używam na dole
 
@@ -69,4 +70,14 @@ memoryCards.forEach(memoryCard =>{
 });
 
 
+// liczenie punktów
 
+const score = document.querySelector(".score");
+// let score = 0;
+
+function countPoints(){
+    if( card1 === card2){
+       score.innerText = 1;
+    }
+
+}
