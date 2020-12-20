@@ -1,6 +1,7 @@
 const memoryCards = document.querySelectorAll(".memory-card");
 const backCard = document.querySelector(".back-card");
 const divCard = document.querySelectorAll("div");
+const score = document.querySelector(".score");
 let card1Element = null;
 let card2Element = null;
 let card1 = null;
@@ -68,9 +69,4 @@ memoryCards.forEach(memoryCard =>{
 });
 
 
-
-
-// done trzeba sprawdzić typy kard jesli są takie same to zostają odkryte
-// jeśli karty są inne to po sekundzie np. wraca do poprzedniego stanu, czyli na back-card
-// done nie wolno mieć odkrytych więcej niż 2 card - w senie innych niż do pary 
 
