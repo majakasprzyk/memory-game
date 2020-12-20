@@ -54,7 +54,7 @@ memoryCards.forEach(memoryCard =>{
             setTimeout(() =>{
                 card1Element.classList.replace('front-card', 'back-card');
                 card2Element.classList.replace('front-card', 'back-card');
-            }, 700); 
+            }, 1000); 
             card1 = null;
             card2 = null;
             

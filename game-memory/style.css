@@ -1,14 +1,34 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+    background-color: #ccebe8;
+}
+
+.title{
+    display: block;
+    margin: 30px auto;
+    text-align: center;
+}
+
+section{
+    background-color: #ffffff;
+    border-radius: 20px;
+}
+
 .memory-game{
     display: flex;
     flex-wrap: wrap;
     margin: 30px 50px;
+    justify-content: center;
 }
 
 .memory-card{
     margin: 15px;
     width: 50px;
     height: 50px;
-    border: 5px solid black;
+    border: 5px solid #0e9e90;
 }
 
 .front-card{
