@@ -17,23 +17,35 @@ section{
     border-radius: 20px;
 }
 
-.memory-game{
+/* .memory-game{
     display: flex;
     flex-wrap: wrap;
     margin: 30px 50px;
     justify-content: center;
-}
+} */
+
+
+.memory-game{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    justify-items: center;
+    margin: 50px 300px;
+    }
+
 
 .memory-card{
     margin: 15px;
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
     border: 5px solid #0e9e90;
 }
 
 .front-card{
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
 }
 
 .smile{
@@ -86,8 +98,8 @@ section{
 }
 
 .back-card{
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
     background-color: beige;
     background-image: none;
 }
