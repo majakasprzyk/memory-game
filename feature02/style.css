@@ -36,3 +36,8 @@ button{
     top: 45%;
     right: 20%;
 }
+
+h1{
+    text-align: center;
+    padding: 20px;
+}
