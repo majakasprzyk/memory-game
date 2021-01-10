@@ -2,6 +2,8 @@
 
 [link do feature 1 - akordeon](https://majakasprzyk.github.io/jfdzr2-project-2/feature/offer.html)
 
+[link do feature 2 - slider](https://majakasprzyk.github.io/jfdzr2-project-2/feature02/index.html)
+
 # jfdzr2-project-2
 
 ## Repozytorium dla Projektu nr 2.
