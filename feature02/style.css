@@ -1,14 +1,20 @@
-*{
+* {
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
 }
 
-.corousel-container{
+.carousel-container {
     width: 60%;
     margin: auto;
+    overflow: hidden;
+}
+
+.carousel-slide{
+    display: flex;
+    width: 100%;
 }
 
 img {
-    max-width: 500px;
+    max-width: 100%;
 }
